@@ -20,13 +20,10 @@ jobs:
           cache: 'yarn'
 
       - name: Install
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: CI=false yarn build
 
       - name: Publish
-        run: >-
-          sshpass -p ${{ secrets.SSH_PASSWORD }}
-          scp -o StrictHostKeyChecking=no -r ./build/*
-          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/public_html
+        run: sshpass -p ${{ secrets.SSH_PASSWORD }} scp -r ./build/* ${{ secrets.SSH_PATH }}
