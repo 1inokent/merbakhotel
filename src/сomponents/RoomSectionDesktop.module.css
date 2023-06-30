@@ -1,0 +1,49 @@
+.container {
+  margin: 0 50px 0 50px;
+  padding: 0;
+}
+
+.boxOne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0 50px 0 70px;
+}
+
+.description__twoRoom {
+  position: relative;
+  z-index: 5;
+  left: 70px;
+
+  max-width: 580px;
+
+  background-color: #0080006e;
+}
+
+.boxTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  margin: 0;
+}
+
+.description__oneRoom {
+  position: relative;
+  z-index: 5;
+  right: 70px;
+
+  max-width: 580px;
+
+  background-color: #0080006e;
+}
+
+.cardIcons {
+  width: 35px;
+  height: 35px;
+}
+
+p {
+  margin: 0 20px 0 20px;
+}

@@ -1,0 +1,16 @@
+.layout-style {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.outlet-style {
+  background-image: url('https://img.freepik.com/free-vector/leaves-wallpaper-with-metallic-foil-concept_79603-942.jpg?w=1060&t=st=1684069914~exp=1684070514~hmac=6b2628b3ca607fc24c7a4c0ace3aba8e6aa0f57e26e343663ad7a5f60df85f67');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-style {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
