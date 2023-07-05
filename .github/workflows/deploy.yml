@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           source: "build/*"
-          target: "~/public_html"
+          target: public_html
