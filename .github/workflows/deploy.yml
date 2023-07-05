@@ -26,4 +26,10 @@ jobs:
         run: CI=false yarn build
 
       - name: Publish
-        run: sshpass -p ${{ secrets.SSH_PASSWORD }} scp -r ./build/* ${{ secrets.SSH_PATH }}
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          source: "build/*"
+          target: "~/public_html"
