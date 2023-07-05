@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import YMap from './сomponents/Map';
+import Info from './сomponents/Info';
 
 import HeroHeader from './сomponents/Header';
 import RoomsSectionMobile from './сomponents/RoomsSectionMobile';
@@ -75,17 +75,23 @@ export default function App() {
       <Layout>
         <HeroHeader title="Mer Bak" />
         <div className="carusel__scroll-animation">
-          {isMobile ? (
-            <RoomsSectionMobile rooms={[ROOM_1_IMG_ARRAY, ROOM_2_IMG_ARRAY]} />
-          ) : (
-            <>
-              <RoomSectionDesktop
+          <div id="info">
+            <Info />
+          </div>
+          <div id="rooms">
+            {isMobile ? (
+              <RoomsSectionMobile
                 rooms={[ROOM_1_IMG_ARRAY, ROOM_2_IMG_ARRAY]}
-                descriptionRoom={''}
               />
-            </>
-          )}
-          <YMap />
+            ) : (
+              <>
+                <RoomSectionDesktop
+                  rooms={[ROOM_1_IMG_ARRAY, ROOM_2_IMG_ARRAY]}
+                  descriptionRoom={''}
+                />
+              </>
+            )}
+          </div>
         </div>
       </Layout>
     </div>

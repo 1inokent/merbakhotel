@@ -29,7 +29,7 @@ const PAGES = [
   },
   {
     name: 'Комнаты',
-    href: '/rooms',
+    href: '#rooms',
   },
 ];
 

@@ -21,7 +21,7 @@ import {
   TbAirConditioning,
   TbDeviceDesktop,
   TbMicrowave,
-  TbBed,
+  TbFridge,
 } from 'react-icons/tb';
 
 const styleButton = {
@@ -127,8 +127,8 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
                     </Grid>
                     <Grid item xs={4}>
                       <Typography>
-                        <TbBed className={styles.cardIcons} />
-                        <Typography paragraph>Двух местная кровать</Typography>
+                        <TbFridge className={styles.cardIcons} />
+                        <Typography paragraph>Холодильник</Typography>
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
@@ -235,8 +235,8 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
                     </Grid>
                     <Grid item xs={4}>
                       <Typography>
-                        <TbBed className={styles.cardIcons} />
-                        <Typography paragraph>Двух местная кровать</Typography>
+                        <TbFridge className={styles.cardIcons} />
+                        <Typography paragraph>Холодильник</Typography>
                       </Typography>
                     </Grid>
                     <Grid item xs={12}>
