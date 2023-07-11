@@ -88,7 +88,7 @@ export default function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/home"
+            href="#root"
             color={isTitleTextColor}
             sx={{
               mr: 2,

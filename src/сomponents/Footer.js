@@ -10,10 +10,13 @@ export default function Footer() {
         border: '1px solid rgba(0, 0, 0, 0.1)',
       }}
     >
-      <div
-        style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}
-      >
-        <p>Футер сайта</p>
+      <div style={{ display: 'flex', justifyContent: 'end', padding: '10px' }}>
+        <p>
+          по всем вопросам:{' '}
+          <a href="tel:+79788573511" style={{ color: 'rgba(0, 0, 0, 0.55)' }}>
+            +7 978 857 35 11
+          </a>
+        </p>
       </div>
     </div>
   );
