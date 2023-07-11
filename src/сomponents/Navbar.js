@@ -18,7 +18,7 @@ import {
 const PAGES = [
   {
     name: 'Главная',
-    href: '/home',
+    href: '#root',
   },
   {
     name: 'Информация',
