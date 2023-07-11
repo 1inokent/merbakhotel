@@ -4,50 +4,11 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Avatar } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import Box from '@mui/material/Box';
-
-// import styles from './Info.module.css';
 
 import YMap from './Map';
 
 export default function Info() {
   return (
-    // <div className={styles.container} id="info">
-    //   <div className={styles.box}>
-    //     <h2 className={styles.h2}>Добро пожаловать в гостевой дом Mer Bak</h2>
-    //     <div className={styles.imgContainer}>
-    //       <div className={styles.imgHotelContainer}>
-    //         <div className={styles.imgHotel}>a</div>
-    //       </div>
-    //       <p className={styles.p}>
-    //         Мы рады приветствовать вас в нашем уютном гостевом доме,
-    //         расположенном по адресу: улица Чернышевского, 8. Наше прекрасное
-    //         местоположение всего в 450 метрах от моря делает нас идеальным
-    //         выбором для отдыха. Вы сможете насладиться одним из лучших песчаных
-    //         пляжей, которые предлагает наш город. В "Mer Bak" у нас есть 14
-    //         номеров со всеми удобствами, где вы сможете комфортно разместиться.
-    //         Мы приложим все усилия, чтобы ваше пребывание у нас было приятным и
-    //         незабываемым.
-    //       </p>
-    //     </div>
-    //     <h2>Мы находимся</h2>
-    //     <div className={styles.adressDescription}>
-    //       <p className={styles.p}>
-    //         Гостевой дом "Mer Bak" расположен на улице Чернышевского, 8 в городе
-    //         Феодосия. Это удобное место нахождения, где вы найдете рядом
-    //         столовую и продуктовый магазин для удобства питания и покупок. Он
-    //         также находится всего в трех минутах ходьбы от автовокзала,
-    //         обеспечивая легкий доступ к общественному транспорту. Если вы
-    //         предпочитаете автомобильное передвижение, то центр города находится
-    //         всего в 15 минутах езды. Таким образом, гостевой дом "Mer Bak" имеет
-    //         удобное расположение, предоставляя доступ ко всем необходимым
-    //         удобствам и близость к основным местам интереса.
-    //       </p>
-    //     </div>
-    //   </div>
-    //   <YMap />
-    // </div>
-
     <>
       <Grid
         container
