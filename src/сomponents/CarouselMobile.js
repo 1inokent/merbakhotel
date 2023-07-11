@@ -108,10 +108,10 @@ export default function CarouselMobile({
         <CardActions disableSpacing>
           <Typography
             sx={{
-              marginLeft: '47%',
+              marginLeft: '40%',
             }}
           >
-            Больше про конату
+            Больше про комнату
           </Typography>
           <ExpandMore
             expand={expanded}

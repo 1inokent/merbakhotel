@@ -1,7 +1,6 @@
 import React from 'react';
 
 import CarouselDesktop from './CarouselDesktop';
-import BookingButton from './BookingButton';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -10,8 +9,6 @@ import Modal from '@mui/material/Modal';
 import Divider from '@mui/material/Divider';
 
 import { Container, Grid } from '@mui/material';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
 
 import styles from './RoomSectionDesktop.module.css';
 
@@ -36,11 +33,13 @@ const styleButton = {
   m: '5px 0 px 0',
 };
 
+const styleText = {
+  margin: '5px 10px 0 10px',
+};
+
 export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
   const [openOneRoom, setOpenOneRoom] = React.useState(false);
   const [openTwoRoom, setOpenTwoRoom] = React.useState(false);
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleOpenOneRoom = () => setOpenOneRoom(true);
   const handleCloseOneRoom = () => setOpenOneRoom(false);
@@ -50,14 +49,18 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
 
   return (
     <div className={styles.container}>
-      <h2>НАШИ НОМЕРА</h2>
+      <Typography variant="h5" sx={{ marginBottom: '20px' }}>
+        Наши номера
+      </Typography>
 
       <div className={styles.boxOne}>
         <div className={styles.description__twoRoom}>
-          <h4>Двухкомнатный номер</h4>
-          <p>
-            Уютный семейный двух комнатный номер от двух до пяти человек 32м2
-          </p>
+          <Typography variant="h5" sx={styleText}>
+            Двухкомнатный номер
+          </Typography>
+          <Typography variant="body1" sx={styleText}>
+            Уютный двух комнатный номер от двух до пяти человек 32м2
+          </Typography>
           <Button
             onClick={handleOpenTwoRoom}
             sx={{
@@ -139,7 +142,7 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
                     <Typography variant="h6">Описание комнаты:</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography paragraph>
+                    <Typography paragraph width="100%">
                       Просторный номер площадью 32 квадратных метра.В номере
                       есть собственный душ и туалет.В распоряжении гостей две
                       двуспальные кровати и одна односпальная кровать. Мы также
@@ -161,10 +164,19 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
         <CarouselDesktop images={rooms[0]} descriptionRoom={``} />
       </div>
 
-      <div className={styles.boxTwo}>
-        <div className={styles.description__oneRoom}>
-          <h4>Однокомнатный номер</h4>
-          <p>Комфортный однокомнатный номер от двух до четырёх человек 16м2</p>
+      <div
+        className={styles.boxOne}
+        style={{
+          flexDirection: 'row-reverse',
+        }}
+      >
+        <div className={styles.description__twoRoom} style={{ left: '-70px' }}>
+          <Typography variant="h5" sx={styleText}>
+            Однокомнатный номер
+          </Typography>
+          <Typography variant="body1" sx={styleText}>
+            Комфортный однокомнатный номер от двух до четырёх человек 16м2
+          </Typography>
 
           <Button
             onClick={handleOpenOneRoom}
@@ -247,7 +259,7 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
                     <Typography variant="h6">Описание комнаты:</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography paragraph>
+                    <Typography paragraph width="100%">
                       У нас есть уютный однокомнатный номер площадью 16
                       квадратных метров.В номере есть собственный душ и туалет.
                       В распоряжении гостей две двуспальные кровати. Мы также

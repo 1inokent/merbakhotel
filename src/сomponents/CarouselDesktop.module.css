@@ -8,26 +8,24 @@
 .swiper {
   margin: 0;
 
-  background-position: center;
-  background-size: cover;
-  background: no-repeat;
-
-  width: 400px;
-  height: 450px;
-  padding: 30px;
+  width: 700px;
+  height: 620px;
+  margin-bottom: 20px;
 }
 
 .swiperSlide {
-  /* background-position: center;
-  background-size: cover;
-  background: no-repeat; */
-  height: 450px;
+  background-position: center;
+  object-fit: cover;
+  background: no-repeat;
+  height: 620px;
 }
 
 .swiperSlide img {
   display: block;
   width: 100%;
   height: 100%;
+
+  border-radius: 5%;
 }
 
 .descriptionBox {

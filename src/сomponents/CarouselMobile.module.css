@@ -1,4 +1,4 @@
-.swiper {
+/* .swiper {
   margin: auto;
   padding-top: 0;
 }
@@ -15,7 +15,7 @@
 .carusel__scroll-animation {
   opacity: 0;
   transition: opacity 1s;
-}
+} */
 
 .cardIcons {
   width: 35px;
@@ -30,11 +30,11 @@
   margin-bottom: 20px;
 }
 
-.box-description__room h4 {
+/* .box-description__room h4 {
   text-align: center;
   margin-bottom: 10px;
 }
 .box-description__room p {
   margin-left: 30px;
   font-weight: 300;
-}
+} */

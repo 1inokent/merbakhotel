@@ -12,6 +12,7 @@ export default function Layout({ children }) {
       <div className="outlet-style">
         <div className="background-style">{children}</div>
       </div>
+      
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-.hero-header-container {
+.heroHeaderContainer {
   background: url('https://hmd.tvil.ru/tmp/20190606/e11/2232619.jpeg')
     center/cover no-repeat;
   height: 98vh;
@@ -13,10 +13,6 @@
   font-size: 40px;
 }
 
-p {
-  margin: 0 10rem;
-}
-
 h1 {
   margin: 0;
   filter: drop-shadow(0px 0px 20px lightgreen);
@@ -26,10 +22,5 @@ h1 {
 @media screen and (max-width: 500px) {
   h1 {
     color: black;
-  }
-  p {
-    margin: 0;
-    color: black;
-    font-weight: 400;
   }
 }

@@ -14,7 +14,6 @@ export default function RoomSectionMobile({ rooms }) {
           <li>Wi-Fi;</li>
           <li>Телевизор;</li>
           <li>Мини холодильник;</li>
-          <li>Кондиционером;</li>
         </ul>
         <p>
           Ванные комнаты укомплектованы всем необходимым для максимального

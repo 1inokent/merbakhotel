@@ -1,17 +1,17 @@
 import React from 'react';
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
-import './Map.css';
+import styles from './Map.module.css';
 
 export default function YMap() {
   return (
     <YMaps>
-      <div className="map-container">
+      <div className={styles.mapContainer}>
         <Map
-          className="map-container__map"
+          className={styles.mapContainerMap}
           defaultState={{
             center: [45.05795592449081, 35.38641242128752],
-            zoom: 17,
+            zoom: 15,
             controls: ['zoomControl', 'fullscreenControl'],
           }}
           modules={['control.ZoomControl', 'control.FullscreenControl']}

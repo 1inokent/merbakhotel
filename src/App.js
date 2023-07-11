@@ -75,14 +75,15 @@ export default function App() {
       <Layout>
         <HeroHeader title="Mer Bak" />
         <div className="carusel__scroll-animation">
-          <div id="info">
-            <Info />
-          </div>
+          <Info />
+
           <div id="rooms">
             {isMobile ? (
-              <RoomsSectionMobile
-                rooms={[ROOM_1_IMG_ARRAY, ROOM_2_IMG_ARRAY]}
-              />
+              <>
+                <RoomsSectionMobile
+                  rooms={[ROOM_1_IMG_ARRAY, ROOM_2_IMG_ARRAY]}
+                />
+              </>
             ) : (
               <>
                 <RoomSectionDesktop

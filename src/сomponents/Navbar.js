@@ -15,9 +15,6 @@ import {
   AppBar,
 } from '@mui/material';
 
-import './Navbar.css';
-import { ClassNames } from '@emotion/react';
-
 const PAGES = [
   {
     name: 'Главная',
@@ -25,7 +22,7 @@ const PAGES = [
   },
   {
     name: 'Информация',
-    href: '/info',
+    href: '#info',
   },
   {
     name: 'Комнаты',
@@ -79,9 +76,13 @@ export default function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleLinkClick = () => {
+    handleCloseNavMenu();
+  };
+
   return (
     <AppBar position="fixed" color={isTransparent} elevation={0}>
-      <Container maxWidth="xl">
+      <Container maxWidth={{ xs: 'xs', md: 'md', lg: 'lg', xl: 'xl' }}>
         <Toolbar disableGutters sx={{ flexDirection: 'row', fontSize: 17 }}>
           <Typography
             variant="h6"
@@ -145,15 +146,21 @@ export default function Navbar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
-                '@media (max-width: 500px)': {
-                  margin: 0,
-                },
+                display: { xs: 'block', md: 'block' },
+                // '@media (max-width: 500px)': {
+                //   margin: 0,
+                // },
               }}
             >
               {PAGES.map((page) => (
-                <MenuItem href={page.href} key={page.href}>
-                  <Typography textAlign="center">{page.name}</Typography>
+                <MenuItem key={page.href} onClick={handleLinkClick}>
+                  <Link
+                    href={page.href}
+                    key={page.href}
+                    sx={{ color: '#000', textDecoration: 'none' }}
+                  >
+                    {page.name}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -166,7 +173,6 @@ export default function Navbar() {
                 mr: 15,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}

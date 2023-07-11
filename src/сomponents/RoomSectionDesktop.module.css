@@ -1,5 +1,4 @@
 .container {
-  margin: 0 50px 0 50px;
   padding: 0;
 }
 
@@ -8,8 +7,14 @@
   flex-direction: row;
   align-items: center;
 
-  margin: 0 50px 0 70px;
 }
+/* .boxTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  margin: 0 50px;
+} */
 
 .description__twoRoom {
   position: relative;
@@ -20,16 +25,7 @@
 
   background-color: #0080006e;
 }
-
-.boxTwo {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-
-  margin: 0;
-}
-
-.description__oneRoom {
+/* .description__oneRoom {
   position: relative;
   z-index: 5;
   right: 70px;
@@ -37,7 +33,11 @@
   max-width: 580px;
 
   background-color: #0080006e;
-}
+} */
+
+
+
+
 
 .cardIcons {
   width: 35px;
