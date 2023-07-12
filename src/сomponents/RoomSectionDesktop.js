@@ -53,6 +53,42 @@ export default function RoomSectionDesktop({ rooms, descriptionRoom }) {
         Наши номера
       </Typography>
 
+      <Grid
+        container
+        justifyContent={'left'}
+        maxWidth={'600px'}
+        sx={{ margin: '40px' }}
+      >
+        <Grid item>
+          <Typography variant="subtible2">Все номера оснащены :</Typography>
+          <ul>
+            <li>Кондиционером;</li>
+            <li>Wi-Fi;</li>
+            <li>Телевизор;</li>
+            <li>Мини холодильник;</li>
+          </ul>
+        </Grid>
+        <Grid item>
+          <Typography variant="subtible1">
+            Ванные комнаты укомплектованы всем необходимым для максимального
+            комфорта, включая качественную сантехнику. Гарантирована
+            круглосуточная подача холодной и горячей воды.
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Divider variant="middle" />
+        </Grid>
+      </Grid>
+
+      <Grid container justify="center" alignItems="center">
+        <Grid item sx={{ marginLeft: 'calc(50% - 300px)' }}>
+          <Typography variant="h6" maxWidth="600px">
+            В нашем гостевом доме "Mer Bak" мы предоставляем несколько видов
+            номеров
+          </Typography>
+        </Grid>
+      </Grid>
+
       <div className={styles.boxOne}>
         <div className={styles.description__twoRoom}>
           <Typography variant="h5" sx={styleText}>

@@ -20,7 +20,7 @@ export default function Info() {
         mb={{ xs: 0, sm: 1, md: 3, lg: 3 }}
       >
         <Grid item xs={12} md={12} lg={12} m="5px">
-          <Typography variant="h5" id="info" fontWeight={500}>
+          <Typography variant="h5" fontWeight={500}>
             Добро пожаловать в гостевой дом Mer Bak
           </Typography>
         </Grid>
@@ -55,7 +55,7 @@ export default function Info() {
         <Grid item xs={12} sm={12} md={12} lg={12}>
           <Divider />
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} id="info">
           <Typography variant="h5" fontWeight={500}>
             Мы находимся
           </Typography>

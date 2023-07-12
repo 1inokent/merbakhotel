@@ -168,7 +168,7 @@ export default function Navbar() {
               variant="h5"
               noWrap
               component="a"
-              href="/home"
+              href="#root"
               sx={{
                 mr: 15,
                 display: { xs: 'flex', md: 'none' },
